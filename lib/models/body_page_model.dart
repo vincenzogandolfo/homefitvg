@@ -45,11 +45,8 @@ class BodyPageModel extends StatelessWidget {
         padding: const EdgeInsets.all(30),
         child: ListView.separated(
           itemCount: numberExercise,
-          separatorBuilder: (BuildContext context, int index) => Container(
-            margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 15),
-            color: Colors.grey.shade300,
-            height: 2,
-          ),
+          separatorBuilder: (BuildContext context, int index) =>
+              const SizedBox(height: 30),
           itemBuilder: (BuildContext context, int index) {
             return Image.asset(imageExercise[index]);
           },
