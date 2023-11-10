@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:homefitvg/models/body_page_model.dart';
 
 class Braccia extends StatelessWidget {
   Braccia({super.key});
@@ -17,29 +18,10 @@ class Braccia extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.greenAccent,
-        title: const Text(
-          "Braccia",
-          style: TextStyle(
-            fontSize: 24,
-            fontWeight: FontWeight.bold,
-            color: Colors.white,
-          ),
-        ),
-        centerTitle: true,
-      ),
-      body: Padding(
-        padding: const EdgeInsets.all(30),
-        child: ListView.separated(
-          itemCount: immaginiBraccia.length,
-          separatorBuilder: (BuildContext context, int index) => const Divider(height: 30),
-          itemBuilder: (BuildContext context, int index) {
-            return Image.asset(immaginiBraccia[index]);
-          },
-        ),
-      ),
+    return BodyPageModel(
+      titleBodyPart: "Braccia",
+      numberExercise: immaginiBraccia.length,
+      imageExercise: immaginiBraccia,
     );
   }
 }

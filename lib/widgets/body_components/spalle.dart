@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:homefitvg/models/body_page_model.dart';
 
 class Spalle extends StatelessWidget {
   Spalle({super.key});
@@ -18,29 +19,10 @@ class Spalle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.greenAccent,
-        title: const Text(
-          "Spalle",
-          style: TextStyle(
-            fontSize: 24,
-            fontWeight: FontWeight.bold,
-            color: Colors.white,
-          ),
-        ),
-        centerTitle: true,
-      ),
-      body: Padding(
-        padding: const EdgeInsets.all(30),
-        child: ListView.separated(
-          itemCount: immaginiSpalle.length,
-          separatorBuilder: (BuildContext context, int index) => const Divider(height: 30),
-          itemBuilder: (BuildContext context, int index) {
-            return Image.asset(immaginiSpalle[index]);
-          },
-        ),
-      ),
+    return BodyPageModel(
+      titleBodyPart: "Spalle",
+      numberExercise: immaginiSpalle.length,
+      imageExercise: immaginiSpalle,
     );
   }
 }

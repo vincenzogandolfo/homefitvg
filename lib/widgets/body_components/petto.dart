@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:homefitvg/models/body_page_model.dart';
 
 class Petto extends StatelessWidget {
-
   Petto({super.key});
 
   final List<String> immaginiPetto = [
@@ -21,29 +21,10 @@ class Petto extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.greenAccent,
-        title: const Text(
-          "Petto",
-          style: TextStyle(
-            fontSize: 24,
-            fontWeight: FontWeight.bold,
-            color: Colors.white,
-          ),
-        ),
-        centerTitle: true,
-      ),
-      body: Padding(
-        padding: const EdgeInsets.all(30),
-        child: ListView.separated(
-          itemCount: immaginiPetto.length,
-          separatorBuilder: (BuildContext context, int index) => const Divider(height: 30),
-          itemBuilder: (BuildContext context, int index) {
-            return Image.asset(immaginiPetto[index]);
-          },
-        ),
-      ),
+    return BodyPageModel(
+      titleBodyPart: "Petto",
+      numberExercise: immaginiPetto.length,
+      imageExercise: immaginiPetto,
     );
   }
 }

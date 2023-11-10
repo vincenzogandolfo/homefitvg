@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:homefitvg/models/body_page_model.dart';
 
 class Cardio extends StatelessWidget {
   Cardio({super.key});
@@ -13,29 +14,10 @@ class Cardio extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.greenAccent,
-        title: const Text(
-          "Cardio",
-          style: TextStyle(
-            fontSize: 24,
-            fontWeight: FontWeight.bold,
-            color: Colors.white,
-          ),
-        ),
-        centerTitle: true,
-      ),
-      body: Padding(
-        padding: const EdgeInsets.all(30),
-        child: ListView.separated(
-          itemCount: immaginiCardio.length,
-          separatorBuilder: (BuildContext context, int index) => const Divider(height: 30),
-          itemBuilder: (BuildContext context, int index) {
-            return Image.asset(immaginiCardio[index]);
-          },
-        ),
-      ),
+    return BodyPageModel(
+      titleBodyPart: "Cardio",
+      numberExercise: immaginiCardio.length,
+      imageExercise: immaginiCardio,
     );
   }
 }
