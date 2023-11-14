@@ -24,8 +24,11 @@ class App extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'HomeFit VG',
       home: AnimatedSplashScreen(
-        splash: Image.asset(
-          'images/splash.png',
+        splash: ClipRRect(
+          borderRadius: BorderRadius.circular(12),
+          child: Image.asset(
+            'images/splash.png',
+          ),
         ),
         nextScreen: const HomePage(),
         splashTransition: SplashTransition.rotationTransition,
