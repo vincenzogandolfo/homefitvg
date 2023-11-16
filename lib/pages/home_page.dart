@@ -35,6 +35,7 @@ class _HomePageState extends State<HomePage> {
             bottomRight: Radius.circular(40),
           ),
         ),
+        automaticallyImplyLeading: false,
         backgroundColor: Colors.greenAccent,
         elevation: 16,
         title: const Text(

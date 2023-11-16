@@ -40,11 +40,11 @@ class Motivazione extends StatelessWidget {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        const TextWhiteModel('AUTOSTIMA'),
-                        const TextWhiteModel('PASSIONE'),
-                        const TextWhiteModel('VITALITÀ'),
-                        const TextWhiteModel('SALUTE'),
-                        const TextWhiteModel('SFOGO'),
+                        const TextModel('AUTOSTIMA', 20),
+                        const TextModel('PASSIONE', 20),
+                        const TextModel('VITALITÀ', 20),
+                        const TextModel('SALUTE', 20),
+                        const TextModel('SFOGO', 20),
                         Container(
                           height: 4,
                           color: Colors.white,
