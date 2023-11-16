@@ -13,7 +13,7 @@ import '../../widgets/body_components/spalle.dart';
 import '../../widgets/body_components/stretch.dart';
 
 class Allenamento extends StatelessWidget {
-  const Allenamento({Key? key}) : super(key: key);
+  const Allenamento({super.key});
 
   @override
   Widget build(BuildContext context) {

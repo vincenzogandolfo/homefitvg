@@ -8,11 +8,11 @@ class ImageProfileWidget extends StatelessWidget {
   final VoidCallback onClicked;
 
   const ImageProfileWidget({
-    Key? key,
+    super.key,
     required this.imageProfile,
     this.isEdit = false,
     required this.onClicked,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

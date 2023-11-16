@@ -4,7 +4,7 @@ import 'package:homefitvg/models/top_screen_model.dart';
 import '../../models/text_model.dart';
 
 class Motivazione extends StatelessWidget {
-  const Motivazione({Key? key}) : super(key: key);
+  const Motivazione({super.key});
 
   @override
   Widget build(BuildContext context) {

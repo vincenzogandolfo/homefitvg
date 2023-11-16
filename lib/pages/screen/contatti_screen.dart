@@ -4,7 +4,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:homefitvg/models/top_screen_model.dart';
 
 class Contatti extends StatelessWidget {
-  const Contatti({Key? key}) : super(key: key);
+  const Contatti({super.key});
 
   @override
   Widget build(BuildContext context) {

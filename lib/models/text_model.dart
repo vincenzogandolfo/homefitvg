@@ -50,7 +50,7 @@ class TitleText extends StatelessWidget {
 }
 
 class RiposoText extends StatelessWidget {
-  const RiposoText({Key? key}) : super(key: key);
+  const RiposoText({super.key});
 
   @override
   Widget build(BuildContext context) {
